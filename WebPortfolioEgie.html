@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body bgcolor="grey">
+
+         <div class="hamburger" onclick="toggleMenu()">
+          ☰
+        </div>
+
+        <div id="drawer" class="drawer">
+            <h2>Menu</h2>
+
+            <a href="main.html">Home</a>
+            <a href="WebPortfolioEgie.html">Profile</a>
+            <a href="MyStory.html">Story</a>
+            <a href="LoginUI.html">Logout</a>
+        </div>
+        
+        <div class="cover-photo"></div>
+
+        <div class="profile-section">
+            <img src="images\myphoto.jpg" alt="profile-pic">
+
+            <h1>Egie Ramiro</h1>
+            <p>ICT Computer Programming</p>
+            <p>Senior Highschool</p>
+
+
+        </div>
+
+        <div class="about-box">
+            <h2>About Me</h2>
+            <p>
+                Mnchs Student, studying ICT computer programming. Dreamed that someday Ill be a successful Game Developer.
+            </p>
+        </div>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("drawer").classList.toggle("open");
+            }
+        </script>
+    </body>
+</html>

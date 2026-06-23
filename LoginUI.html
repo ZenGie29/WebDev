@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="login-container">
+    <div class="login-box">
+
+      <h2>Login</h2>
+
+      <form onsubmit="login(event)">
+        <input type="text" id="username" placeholder="Username" required>
+
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <p id="error" style="color:red;"></p>
+
+    </div>
+  </div>
+
+  <script>
+    const dummyUser = {
+      username: "Zen",
+      password: "1234"
+    };
+
+    function login(event) {
+      event.preventDefault();
+
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (user === dummyUser.username && pass === dummyUser.password) {
+        window.location.href = "main.html";
+      } else {
+        document.getElementById("error").innerText = "Invalid login";
+      }
+    }
+  </script>
+
+</body>
+</html>

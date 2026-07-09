@@ -229,3 +229,22 @@ Gallery
     display: block;
     margin: 0 auto;
 }
+
+.reflection {
+    width: 80%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.reflection h2 {
+       margin-bottom: 20px;
+    color: #333;
+}
+   

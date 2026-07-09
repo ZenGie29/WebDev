@@ -199,3 +199,33 @@ Gallery
     background: white;
     border-radius: 10px;
 }
+
+/* =========================
+   STORY / VIDEO SECTION
+========================= */
+
+.about-me {
+    width: 80%;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-me h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-me video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
